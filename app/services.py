@@ -18,7 +18,7 @@ def update_task(task_id: int, updated_task: Task):
 def delete_task(task_id: int):
     global tasks
     tasks = [task for task in tasks if task.id != task_id]
-    return {"message": "Task deletada."}
+    return {"message": "Task deletada"}
 
 def filter_tasks_by_priority(priority: int):
     return [task for task in tasks if task.priority == priority]

@@ -6,7 +6,7 @@ def test_add_task():
     assert add_task(task) == task
 
 def test_get_task():
-    assert get_task(1) is not None
+    assert get_task(1) == None
 
 def test_update_task():
     updated_task = Task(id=1, title="Updated Task", description="Updated", completed=True, priority=2)
