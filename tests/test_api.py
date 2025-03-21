@@ -4,8 +4,9 @@ from app.main import app
 client = TestClient(app)
 
 def test_create_task():
-    response = client.post("/tasks", json={"id": 1, "title": "Test", "description": "Testing", "completed": False, "priority": 1})
-    assert response.status_code == 200
+    response = client.post("/tasks", json={"id": 1, "title": "Test", "description": "Testing", "completed": False, "priority": 0})
+    assert response.status_code == 422  
+
 
 def test_priority_filter():
     client.post("/tasks", json={"id": 10, "title": "Low", "description": "Low Priority", "completed": False, "priority": 5})
