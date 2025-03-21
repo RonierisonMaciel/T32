@@ -44,10 +44,9 @@ Identifique e corrija problemas como:
 # Clone o projeto e crie uma nova branch
 git clone https://github.com/RonierisonMaciel/T32.git
 cd T32
-git checkout -b minha-correcao
 
-# Faça as alterações e valide os testes
-pytest
+# caso sua máquina não tenha o git instalado, use o gitcodespace
+git checkout -b minha-correcao
 
 # Suba as alterações
 git add .
