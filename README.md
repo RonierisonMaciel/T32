@@ -57,6 +57,30 @@ git push origin minha-correcao
 # Abra o PR no GitHub e marque seus colegas
 ```
 
+### 5. Criando o ambiente virtual venv
+
+```bash
+python -m venv .venv
+```
+
+### 6. Acessando o ambiente virtual do venv
+
+```bash
+.venv\Scripts\activate
+```
+
+### 7. Rodando os testes usando o pytest
+
+```bash
+pytest
+```
+
+- usando a flag `-v` mostrará cada test de forma particular
+
+```bash
+pytest -v
+```
+
 ---
 
 ## Pontuação (XP)
@@ -74,4 +98,3 @@ git push origin minha-correcao
 ---
 
 Boa sorte, e lembre-se: qualidade não é apenas escrever código que funciona, é escrever código que seja **limpo, confiável, testado e colaborativo**!
-# T32
