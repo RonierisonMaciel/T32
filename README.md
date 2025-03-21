@@ -68,7 +68,13 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 7. Rodando os testes usando o pytest
+### 7. Instalando as bibliotecas no ambiente virtual
+
+```bash
+pip install -r requirements.txt
+```
+
+### 8. Rodando os testes usando o pytest
 
 ```bash
 pytest
