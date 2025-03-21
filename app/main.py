@@ -15,7 +15,7 @@ def list_tasks(priority: int = Query(None)):
 def create_task(task: Task):
     if any(t.id == task.id for t in tasks):
         raise HTTPException(status_code=400, detail="Task ID já existe")
-    if task.priority > 1 or task.priority < 5:
+    if task.priority < 1 or task.priority > 5:
         raise HTTPException(status_code=422, detail="Prioridade deve estar entre 1 e 5")
     return add_task(task)
 
